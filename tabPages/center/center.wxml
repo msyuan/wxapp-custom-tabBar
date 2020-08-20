@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="center-box">
+    我的个人中心
+  </view>
+</view>

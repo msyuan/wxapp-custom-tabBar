@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="category-box">
+    商品分类页面
+  </view>
+  
+</view>

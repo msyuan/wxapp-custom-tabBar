@@ -1,0 +1,39 @@
+<view class="container">
+  <!--导航左右滚动-->
+  <view class="search-box">
+    <input class="search-input" placeholder="搜索热销商品" />
+  </view>
+  <!--图片滑动-->
+  <view id="swiper-mod">
+  <swiper class="swiper-box" indicator-dots="{{ indicatordots }}" interval="{{ interval }}" duration="{{ duration }}" autoplay="{{ autoplay }}">
+    <block wx:for="{{ swiperItem }}" wx:key="id">
+      <swiper-item>
+        <navigator url="{{ item.linkUrl }}" open-type="redirect">
+          <image class="slide-image" src="{{ item.imgUrl }}"></image> 
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+  <view  class="product-wrap">
+    <view class="tj-title">
+      <view class="name">精品推荐</view>
+    </view>
+    <view class="product-main">
+      <!--商品列表-->
+      <view class="product-box">
+        <view class="have-product">
+          <block wx:for="{{ productData }}" wx:key="id">
+            <view class="item" data-id="{{ item.id }}" bindtap="gotoDetail">
+              <image src="{{ item.image }}"></image>
+              <text class="title">{{ item.title }}</text>
+              <view class="price">
+                <text class="new" wx:if="{{item.newPrice}}">￥{{ item.newPrice }}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view> <!--product-main end--> 
+  </view>
+</view> <!--container end-->

@@ -1,0 +1,60 @@
+/**index.wxss**/
+page{
+  background: #f5f5f5;
+}
+/**图片滑动**/
+.swiper-box{ 
+    width:100%;
+    height:300rpx;
+    margin-top: 90rpx;
+    background: #fff;
+}
+.swiper-box image{
+  width:750rpx;
+  height:300rpx;
+}
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal{
+    margin-bottom: 0rpx;
+}
+.swiper-box .wx-swiper-dot{
+    width:40rpx;
+    display: inline-flex;
+    height: 10rpx; 
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.swiper-box .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1;  
+    background: rgba(255,255,255,0.8);
+    border-radius: 8rpx
+}
+.swiper-box .wx-swiper-dot-active::before{
+    background:#ff2742;    
+}
+/**分类**/
+.col-box{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  padding-bottom: 30rpx;
+}
+.col-box .col-item{
+  width: 150rpx;
+  height: 180rpx;
+  float: left;
+  margin: 30rpx 0 0 30rpx;
+  text-align: center;
+}
+.col-box .col-item .icon{
+  width: 120rpx;
+  height: 120rpx;
+  background: url(http://www.qianduan8.com/wp-content/uploads/2017/09/icon.png) no-repeat;
+  background-size: 120rpx;
+  margin: 0 auto;
+}
+.col-box .col-item .text{
+  font-size: 28rpx;
+  padding-top: 16rpx;
+}

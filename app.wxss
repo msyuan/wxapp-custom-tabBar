@@ -1,0 +1,124 @@
+/**app.wxss**/
+page,input,textarea,button{
+  font-family:"Microsoft Yahei","Heiti SC","Helvetica Neue","Tahoma",Arial,sans-serif;
+  color: #333;
+}
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.search-box{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+}
+.search-box .search-input{ 
+  display: block;
+  width: 560rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  margin: 15rpx auto;
+  background: #f5f5f5;
+  padding-left: 40rpx
+}
+/**商品列表**/
+.product-wrap{
+  background: #fff;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20rpx;
+  padding-top: 30rpx;
+}
+.product-wrap .tj-title{
+  height: 40rpx;
+  line-height: 40rpx;
+  padding-left: 80rpx;
+  position: relative;
+  margin-bottom: 30rpx;
+  font-size: 30rpx
+}
+.product-wrap .tj-title::before{
+  content: '';
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 0;
+  background: url(http://www.qianduan8.com/wp-content/uploads/2017/10/jp-cion.png) no-repeat;
+  background-size: 40rpx;
+}
+.product-box{
+  margin: 0 34rpx 0;
+  height: auto;
+  overflow: hidden;
+}
+.product-box1{
+  margin-top: 112rpx;
+}
+.product-box .no-product{
+  text-align: center;
+  padding-top: 300rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.product-box .item{
+  width: 324rpx;
+  height: 560rpx;
+  float: left;
+  position: relative
+}
+.product-box .item image{
+  width: 324rpx;
+  height: 422rpx;
+  display: block;
+}
+.product-box .item:nth-child(2n){
+  margin-left: 34rpx;
+}
+.product-box .item .title{
+  width: 324rpx;
+  display: block;
+  font-size: 28rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  overflow: hidden;
+  margin-top: 26rpx;
+}
+.product-box .item .price{
+  height: 42rpx;
+  margin-top: 6rpx;
+  font-size: 30rpx;
+}
+.product-box .item .price text{
+  display: inline-block;
+}
+.product-box .item .new{
+  color: #FF3E60;
+  font-size: 26rpx;
+}
+.product-box .item .old{
+  color: #bfbfbf;
+  height: 24rpx;
+  font-size: 22rpx;
+  margin-left: 16rpx;
+  position: relative;
+}
+.product-box .item .old::after{
+  content: '';
+   height: 2rpx;
+   background: #bfbfbf;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   width: 100%;
+   overflow: hidden;
+   z-index: 11;
+   margin-top: 1rpx;
+}
