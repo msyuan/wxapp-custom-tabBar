@@ -29,3 +29,5 @@ api接口地址和appid配置的文件
 ## 二、文件命名注意事项
 
 自定义tabbar的页面组件的文件夹不能用中划线，不然会报错，要用驼峰写法比如：tabPages ，但不能写为tab-pages，(但是官方推荐的custom-tab-bar是没有问题的)
+
+![avatar](./images/view.png)
